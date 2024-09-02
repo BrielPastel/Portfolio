@@ -1,0 +1,1 @@
+Todos os exercicios nessa pasta devem ser abertos no site https://wokwi.com
