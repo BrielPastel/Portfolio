@@ -1,0 +1,15 @@
+<html>
+        <head>
+            <title>Minha Casa</title>
+        </head>
+        <body>
+            <h1>Banheiro</h1>
+            <h2>Acesse o menu</h2>
+            <ul>
+                {% for key, value in itensBanheiro.items() %}
+                    <li> <a href="{{ value }}">{{ key }}</a> </li>
+                {% endfor %}
+            </ul>
+            <p>Voltar para <a href="/">página inicial</a>!</p>
+        </body>
+    </html>

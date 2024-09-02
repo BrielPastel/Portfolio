@@ -1,0 +1,10 @@
+{% extends"quartos.html" %}
+{% block content%}
+<h1>Banheiro</h1>
+    <h2>Acesse o menu</h2>
+    <ul>
+        {% for key, value in itensBanheiro.items() %}
+            <li> <a href="{{ value }}">{{ key }}</a> </li>
+        {% endfor %}
+    </ul>
+{% endblock%}

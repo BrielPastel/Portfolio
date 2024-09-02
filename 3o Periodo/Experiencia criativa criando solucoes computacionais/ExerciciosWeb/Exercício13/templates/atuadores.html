@@ -1,0 +1,14 @@
+{% extends"base1.html" %}
+{% block content%}
+<h1>Atuadores</h1>
+        <ul>
+            {% for nome, valor in atuadores.items() %}
+                <li>{{nome}} : {{valor}}</li>
+                {% if (valor == 1) %}
+                    <li>Ligado</li>
+                {% else %}
+                    <li>Desligado</li>
+                {% endif %}
+            {% endfor %}
+        </ul>
+{% endblock%}

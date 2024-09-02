@@ -1,0 +1,14 @@
+<html>
+    <head>
+        <title>Minha Casa</title>
+    </head>
+    <body>
+        <h1>Minha Casa</h1>
+        <h3>Acesse o menu:</h3>
+        <ul>
+            {% for key, value in quartos.items() %}
+                <li> <a href="{{ value }}">{{ key }}</a> </li>
+            {% endfor %}
+        </ul>
+    </body>
+</html>

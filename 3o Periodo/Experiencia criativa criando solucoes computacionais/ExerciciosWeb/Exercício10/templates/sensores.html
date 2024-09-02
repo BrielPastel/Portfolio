@@ -1,0 +1,10 @@
+<!--index.html -->
+{% extends"base.html" %}
+{% block content%}
+<ul>
+    {% for sensor in sensores %}
+        <li>{{ sensor }}</li>
+    {% endfor %}
+</ul>
+<p>Voltar para <a href="/">página inicial</a>!</p>
+{% endblock%}

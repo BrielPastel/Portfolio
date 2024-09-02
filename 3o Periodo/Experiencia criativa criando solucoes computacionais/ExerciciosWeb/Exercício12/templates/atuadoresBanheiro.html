@@ -1,0 +1,11 @@
+{% extends"quartos.html" %}
+{% block content%}
+<h1>Atuadores do banheiro</h1>
+    <h2>Atuadores</h2>
+    <ul>
+        {% for dispositivo in dispositivos %}
+            <li>{{ dispositivo }}</li>
+        {% endfor %}
+    </ul>
+    <p>Voltar para <a href="/banheiro">banheiro</a>!</p>
+{% endblock%}

@@ -1,0 +1,15 @@
+<html>
+        <head>
+            <title>Minha Casa</title>
+        </head>
+        <body>
+            <h1>Sensores do quarto</h1>
+            <h2>Sensores</h2>
+            <ul>
+                {% for dispositivo in dispositivos %}
+                    <li>{{ dispositivo }}</li>
+                {% endfor %}
+            </ul>
+            <p>Voltar para <a href="/quarto">quarto</a>!</p>
+        </body>
+    </html>
