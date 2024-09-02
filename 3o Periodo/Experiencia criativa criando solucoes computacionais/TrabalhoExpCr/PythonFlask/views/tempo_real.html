@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="tempo_real">
+        <div class="tempo_real_ultimo_movimento">
+                <ul>
+                        <p class="tempo_real_ultimo_movimento_texto"> Último movimento detectado:</p>
+                </ul>
+        </div>
+        <div class="tempo_real_espaco">
+        </div>
+        <div class="tempo_real_horario">
+                <ul>
+                {% for key, value in values.items() %}
+                        {% if key == 'dia' %}
+                                <td>{{value}} /</td>
+                        {% elif key == 'mes' %}
+                                <td>{{value}} /</td>
+                        {% elif key == 'ano' %}
+                                <td>{{value}} -</td>
+                        {% elif key == 'hora' %}
+                                <td>{{ value }} :</td>
+                        {% elif key == 'minuto' %}
+                                <td>{{ value }} :</td>
+                        {% elif key == 'segundo' %}
+                                <td>{{ value }}</td>
+                        {% endif %}
+                {% endfor %}
+                </ul>
+        </div>
+</div>
+{% endblock %}

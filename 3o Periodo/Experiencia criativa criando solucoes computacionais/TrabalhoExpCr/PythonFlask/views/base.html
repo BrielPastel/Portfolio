@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="static/css/base.css">
+	<link rel="stylesheet" href="static/css/index.css">
+</head>
+<body>
+	<div class="navigation">
+		<ul>
+            <li class="list">
+				<a href="{{ url_for('usersbp.home') }}">
+                    <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
+                    <span class="title">Seja bem-vindo {{current_user.username}}!</span>
+                </a>
+			</li>
+			<li class="list">
+				<a href="{{ url_for('usersbp.home') }}">
+					<span class="icon"><ion-icon name="home-outline"></ion-icon></span>
+					<span class="title">Home</span>
+				</a>
+			</li>
+			<li class="list">
+				<a href="{{ url_for('sensors.list_sensors') }}">
+					<span class="icon"><ion-icon name="enter-outline"></ion-icon></span>
+					<span class="title">Sensores</span>
+				</a>
+			</li>
+			<li class="list">
+				<a href="{{ url_for('actuators.list_actuators') }}">
+					<span class="icon"><ion-icon name="exit-outline"></ion-icon></span>
+					<span class="title">Atuadores</span>
+				</a>
+			</li>
+			{% if current_user.user_role == 'admin' or current_user.user_role == 'statistical' %}
+			<li class="list">
+				<a href="{{ url_for('read.tempo_real') }}">
+					<span class="icon"><ion-icon name="hourglass-outline"></ion-icon></span>
+					<span class="title">Tempo real</span>
+				</a>
+			</li>
+			{% endif %}
+			{% if current_user.user_role == 'admin' or current_user.user_role == 'operator' %}
+			<li class="list">
+				<a href="{{ url_for('publish') }}">
+					<span class="icon"><ion-icon name="megaphone-outline"></ion-icon></span>
+					<span class="title">Alarme</span>
+				</a>
+			</li>
+			{% endif %}
+			{% if current_user.user_role == 'admin' %}
+			<li class="list">
+				<a href="{{ url_for('usersbp.list_users') }}">
+					<span class="icon"><ion-icon name="people-outline"></ion-icon></span>
+					<span class="title">Usuários</span>
+				</a>
+			</li>
+			{% endif %}
+			{% if current_user.user_role == 'admin' or current_user.user_role == 'statistical' %}
+			<li class="list">
+				<a href="/history_read">
+					<span class="icon"><ion-icon name="create-outline"></ion-icon></span>
+					<span class="title">Histórico sensor</span>
+				</a>
+			</li>
+			{% endif %}
+			{% if current_user.user_role == 'admin' or current_user.user_role == 'operator' %}
+			<li class="list">
+				<a href="/history_write">
+					<span class="icon"><ion-icon name="close-circle-outline"></ion-icon></span>
+					<span class="title">Histórico atuador</span>
+				</a>
+			</li>
+			{% endif %}
+			<li class="list">
+				<a href="{{url_for('usersbp.logout')}}">
+					<span class="icon"><ion-icon name="close-circle-outline"></ion-icon></span>
+					<span class="title">Sair</span>
+				</a>
+			</li>
+		</ul>
+	</div>
+	{% block content %}
+	{% endblock %}
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

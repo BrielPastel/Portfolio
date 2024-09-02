@@ -1,0 +1,88 @@
+.home_titulo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home_espaco{
+    height: 3%;
+}
+
+.home_titulo span{
+    font-size: 40px;
+}
+
+.home_titulo_e_subt{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 17%;
+    width: 100%;
+}
+
+.home_subtitulo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home_subtitulo p{
+    font-size: 25px;
+}
+
+.home_texto{
+    height: 80%;
+    margin: 30px 30px 30px 30px;
+    width: 70%;
+}
+
+.home_texto p{
+    font-size: 15px;
+}
+
+.home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    color: white;
+}
+
+.tempo_real{
+    width: 100%;
+    height: 100%;  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+}
+
+.tempo_real_horario {
+    font-size: 24px;
+}
+
+.tempo_real_ultimo_movimento_texto{
+    font-size: 34px;
+}
+
+.alarme{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.alarme p{
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+}
+
+.tempo_real_espaco{
+    height: 15px;
+}
