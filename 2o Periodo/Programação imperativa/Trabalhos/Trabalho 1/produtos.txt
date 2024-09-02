@@ -1,0 +1,11 @@
+10
+35 5.00 Esfiha
+43 6.50 Achocolatado
+89 25.00 Bolo
+78 2.00 Pão
+22 3.50 Quibe
+51 17.00 Torta
+11 4.50 Pastel
+96 7.00 Coxinha
+47 3.50 Café
+60 8.50 Rosquinha

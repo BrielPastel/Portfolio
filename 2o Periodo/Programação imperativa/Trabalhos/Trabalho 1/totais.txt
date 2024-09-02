@@ -1,0 +1,61 @@
+Log de Vendas:
+[0] 69 35 6
+[1] 71 78 5
+[2] 71 11 2
+[3] 88 96 2
+[4] 71 60 3
+[5] 88 89 1
+[6] 69 22 1
+[7] 24 47 2
+[8] 24 43 1
+[9] 54 51 2
+[10] 69 35 8
+[11] 71 89 1
+[12] 24 96 2
+[13] 54 43 3
+[14] 54 96 1
+[15] 69 22 2
+[16] 24 47 3
+[17] 24 78 4
+[18] 88 11 5
+[19] 69 60 10
+
+Catalogo de Produtos:
+[0] 35 R$5.00 Esfiha
+[1] 43 R$6.50 Achocolatado
+[2] 89 R$25.00 Bolo
+[3] 78 R$2.00 Pão
+[4] 22 R$3.50 Quibe
+[5] 51 R$17.00 Torta
+[6] 11 R$4.50 Pastel
+[7] 96 R$7.00 Coxinha
+[8] 47 R$3.50 Café
+[9] 60 R$8.50 Rosquinha
+
+Lista de Vendedores:
+[0] 54 Francisco
+[1] 71 Vitão
+[2] 88 Braia
+[3] 24 Lucas
+[4] 69 Mohammed
+
+Total geral vendido: R$403.00
+
+Total de vendas de cada produto:
+Produto 35 (Esfiha) : R$70.00
+Produto 43 (Achocolatado) : R$26.00
+Produto 89 (Bolo) : R$50.00
+Produto 78 (Pão) : R$18.00
+Produto 22 (Quibe) : R$10.50
+Produto 51 (Torta) : R$34.00
+Produto 11 (Pastel) : R$31.50
+Produto 96 (Coxinha) : R$35.00
+Produto 47 (Café) : R$17.50
+Produto 60 (Rosquinha) : R$110.50
+
+Total de vendas de cada vendedor:
+Vendedor 54 (Francisco) R$60.50
+Vendedor 71 (Vitão) R$69.50
+Vendedor 88 (Braia) R$61.50
+Vendedor 24 (Lucas) R$46.00
+Vendedor 69 (Mohammed) R$165.50

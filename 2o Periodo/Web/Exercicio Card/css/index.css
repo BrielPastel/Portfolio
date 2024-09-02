@@ -1,0 +1,55 @@
+.card{
+    width: 200px;
+    height: 300px;
+    border: solid 2px #222;
+    border-radius: 3px;
+    margin: 5px;
+}
+
+.logo{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+.descricao{
+    width: 100%;
+    height: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.acao{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn{
+    border: solid 1px #ddd;
+    border-radius: 100px;
+    width: 75%;
+    height: 50%;
+    background-color: #222;
+    color: #ddd;
+}
+
+#aplicativos{
+    display: flex;
+    flex-wrap: wrap;
+}
