@@ -1,0 +1,6 @@
+5
+p \land q
+p \rightarrow q
+p \leftrightarrow q
+(p \lor q) \land \lnot r
+(p \land q) \lor (r \land \lnot s)

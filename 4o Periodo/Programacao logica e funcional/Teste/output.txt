@@ -1,0 +1,6 @@
+5
+p \land q
+(\lnot p  \lor q)
+(((\lnot p   \lor q)) \land ((\lnot q  \lor p )))
+(p \lor q) \land \lnot r
+(p \land q) \lor (r \land \lnot s)
